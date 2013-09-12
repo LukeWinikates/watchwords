@@ -1,6 +1,6 @@
 require "watchwords/version"
 require "watchwords/words"
-
-module Watchwords
-  # Your code goes here...
-end
+require "watchwords/counter"
+require "watchwords/count"
+require "watchwords/report"
+require "watchwords/cli"
