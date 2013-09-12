@@ -14,6 +14,8 @@ module Watchwords
         allow(Counter).to receive(:count) do
           Count.parse fixtures('fake_count.txt')
         end
+
+        allow(Kernel).to receive(:puts)
       end
 
       it "generates a report based on the counter's output and the good/bad/ignore list" do

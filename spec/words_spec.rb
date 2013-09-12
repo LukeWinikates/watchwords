@@ -7,5 +7,17 @@ module Watchwords
       expect(words.good).to eq(["happy", "green", "clouds"])
       expect(words.bad).to eq(["angry", "cold", "jerks"])
     end
+
+    context "when no good words are provided" do
+      it "uses the empty array" do
+        Words.new({}).good.should == []
+      end
+    end
+
+    context "when no bad words are provided" do
+      it "uses the empty array" do
+        Words.new({}).bad.should == []
+      end
+    end
   end
 end

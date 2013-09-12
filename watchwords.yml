@@ -1,0 +1,9 @@
+good:
+  - waffle
+  - bird
+  - class
+bad:
+  - coyote
+  - Module
+:glob: '*.rb'
+:dir: '.'

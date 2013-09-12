@@ -3,8 +3,8 @@ module Watchwords
     attr_accessor :good, :bad
 
     def initialize(opts)
-      self.good = opts[:good]
-      self.bad = opts[:bad]
+      self.good = opts[:good] || []
+      self.bad = opts[:bad] || []
     end
   end
 end

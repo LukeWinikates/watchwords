@@ -1,3 +1,5 @@
+require 'colorize'
+
 module Watchwords
   class Report
     attr_accessor :good, :bad
@@ -12,6 +14,11 @@ module Watchwords
       self.bad = counts.select do |count|
         words.bad.include? count[:token]
       end
+    end
+
+    def to_s
+      "bad: #{bad}\n".red +
+      "good: #{good}".green
     end
   end
 end
