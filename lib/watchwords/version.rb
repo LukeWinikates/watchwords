@@ -1,0 +1,3 @@
+module Watchwords
+  VERSION = "0.0.1"
+end
