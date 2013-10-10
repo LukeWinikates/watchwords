@@ -20,5 +20,6 @@ module Watchwords
 
     it {should respond_to(:good)}
     it {should respond_to(:bad)}
+    it {should respond_to(:top)}
   end
 end
